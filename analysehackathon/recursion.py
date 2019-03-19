@@ -30,6 +30,7 @@ def fibonacci(n):
     """
     if n <= 1:
         return n
+    return fibonacci(n - 2) + fibonacci(n - 1)
 
 def factorial(n):
 
@@ -37,7 +38,8 @@ def factorial(n):
     if n == 1:
         return n
     else:
-        return n * factorial(n-1)
+        return n * factorial(n-1)  # <<-- Notice how the function does factorial(n-1) within factorial(n)!
+
 
 def reverse(word):
 
