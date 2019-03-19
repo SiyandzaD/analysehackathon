@@ -35,8 +35,8 @@ def fibonacci(n):
 def factorial(n):
 
     '''Return n!'''
-    if n == 1:
-        return n
+    if n <= 1:
+        return 1
     else:
         return n * factorial(n-1)  # <<-- Notice how the function does factorial(n-1) within factorial(n)!
 
